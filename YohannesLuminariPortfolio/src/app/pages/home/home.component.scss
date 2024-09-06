@@ -68,3 +68,55 @@ section{
   color: var(--main-color);
   border: .2rem solid var(--main-color);
 }
+
+.home .profession-container{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 768px;
+  height: 768px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.home .profession-container .profession-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 768px;
+  height: 768px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.home .profession-box .profession{
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  color: var(--main-color);
+  transform: rotate(calc(360deg / 4 * var(--i)));
+  transform-origin: 384px;
+  background: red;
+}
+
+.home .profession i{
+  font-size: 2.8rem;
+}
+
+.home .profession h3{
+  font-size: 2.8rem;
+  line-height: 1;
+  font-weight: 600;
+}
+.home .profession-box .circle{
+  width: 560px;
+  height: 560px;
+  background: red;
+  border: 3px solid var(--main-color);
+  border-radius: 50%;
+}
